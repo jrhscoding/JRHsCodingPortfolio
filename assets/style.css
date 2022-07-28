@@ -6,7 +6,23 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-color: grey;
   }
+
+.section {
+    border: rgb(4, 66, 121);
+    display: flex;
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px;
+    background-color: #1877f2;
+    border-radius: 10px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* header section */
 
@@ -16,6 +32,9 @@ header  {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: rgb(4, 66, 121);
+    border-bottom-style: solid;
+    border-width: 5px;
 }
 
 header h1 {
@@ -47,18 +66,56 @@ header nav ul li a {
 
 /* end header section */
 
-.section {
-    display: flex;
-}
 
 /* begin about me section */
+
+article {
+    margin-right: 20%;
+}
+
+article div h2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
 article div img {
     width: auto;
     max-height: 200px;
 }
 
 article div p {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+article div p a {
+    display: flex;
+    min-width: 500px;
 }
 
 /* end about me section */
+
+/* begin deployed projects section */
+
+section {
+    margin-left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div h2 {
+    display: block;
+    justify-content: center;
+}
+
+section div img {
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    width: auto;
+    max-height: 200px;
+}
+
+/* end deployed projects section */
