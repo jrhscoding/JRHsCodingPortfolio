@@ -12,6 +12,7 @@ body {
 .section {
     border: rgb(4, 66, 121);
     display: flex;
+    flex-wrap: wrap;
     border-width: 5px;
     border-style: solid;
     margin: 10px;
@@ -19,9 +20,10 @@ body {
     border-radius: 10px;
 }
 
-.wrap {
-    display: flex;
-    flex-wrap: wrap;
+.margin {
+    /* display: flex;
+    flex-wrap: wrap; */
+    margin: 10px;
 }
 
 /* header section */
@@ -68,29 +70,32 @@ header nav ul li a {
 
 
 /* begin about me section */
-
-article {
-    margin-right: 20%;
+article div{
+    display: flex;
 }
 
-article div h2 {
+#pain {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+article div div h2 {
     margin: 10px;
 }
 
 article div img {
     width: auto;
     max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-article div p {
-    display: flex;
+article div div p {
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
-article div p a {
+article div div p a {
     display: flex;
     min-width: 500px;
 }
@@ -99,23 +104,30 @@ article div p a {
 
 /* begin deployed projects section */
 
-section {
-    margin-left: 20%;
-    display: flex;
-    flex-wrap: wrap;
+section div h2 {
+    margin: 10px;
 }
 
-section div h2 {
-    display: block;
-    justify-content: center;
+section div h3 {
+    display: inline-block;
+    position: relative;
+    top: 39px;
+    left: 25px;
+    z-index: 3;
+    color: #1877f2;
+    border-style: solid;
+    background-color: rgb(4, 66, 121);
+    border-radius: 5px;
 }
 
 section div img {
-    display: flex;
-    flex-wrap: wrap;
-    display: block;
     width: auto;
     max-height: 200px;
+    position: relative;
 }
 
+section div img:hover {
+    max-height: 215px;
+    width: auto;
+}
 /* end deployed projects section */
