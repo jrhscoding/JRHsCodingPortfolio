@@ -18,6 +18,7 @@ body {
     margin: 10px;
     background-color: #1877f2;
     border-radius: 10px;
+    min-width: 500px;
 }
 
 .margin {
@@ -71,7 +72,7 @@ header nav ul li a {
 
 /* begin about me section */
 article div{
-    display: flex;
+display: flex;
 }
 
 #pain {
@@ -118,6 +119,21 @@ section div h3 {
     border-style: solid;
     background-color: rgb(4, 66, 121);
     border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    border: rgb(4, 66, 121);
+    border-width: 5px;
+    border-style: solid;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 section div img {
