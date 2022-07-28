@@ -38,6 +38,7 @@ header  {
     border: rgb(4, 66, 121);
     border-bottom-style: solid;
     border-width: 5px;
+    min-width: 520px;
 }
 
 header h1 {
@@ -63,7 +64,7 @@ header nav ul li {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-size: 1.55vw;
+    font-size: 1.75vh;
     text-decoration: none;
 }
 
@@ -134,16 +135,92 @@ section div h3 {
     border-style: solid;
     margin: 10px;
     border-radius: 10px;
-}
-
-section div img {
     width: auto;
     max-height: 200px;
     position: relative;
 }
 
-section div img:hover {
+.thumbnail:hover {
     max-height: 215px;
     width: auto;
 }
 /* end deployed projects section */
+
+/* media query for smaller desktop screens and smaller */
+
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: 2vh;
+    }
+}
+
+/* end desktop media query */
+
+/* media query for tablets and smaller */
+
+@media screen and (max-width: 768px) {
+    .center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .margin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    #contact-me {
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+    }
+
+
+}
+
+/* end tablets media query */
+
+/* media query for phones  */
+
+@media screen and (max-width: 575px) {
+    
+    #phone {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li a {
+        width: fit-content;
+        font-size: 3vh;
+    }
+
+    article div img {
+        display: block;
+        justify-content: center;
+        max-height: 450px
+    }
+
+    h2 {
+        font-size: 4vh;
+    }
+    
+    p {
+        font-size: 3.5vh;
+    }
+
+}
+
+/* end phones media query */
